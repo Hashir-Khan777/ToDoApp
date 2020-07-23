@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title> To Do App </title>
+</head>
+
+<body>
+    <div class="todo">
+        <div class="todo-header">
+            <h1 class="todo-heading"> WHAT YOU SHOULD TO DO... </h1>
+        </div>
+        <div class="todo-input">
+            <div class="input-label">
+                <input type="text" required class="whatToDo" id="label" autocomplete="off">
+                <label for="label" class="todo-label"> what you should to do... </label>
+            </div>
+            <div class="todo-btns">
+                <button class="input-btn" id="btn1" onclick="add()"> Add Item </button>
+                <button class="input-btn" id="btn2" onclick="deleteall()"> Delete All </button>
+            </div>
+        </div>
+        <div class="todo-list">
+            <ul class="todo-items" id="items">
+
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #1c1e24;
+}
+
+div.todo-header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+h1.todo-heading {
+  color: #48cae4;
+  padding: 45px 0px 45px 0px;
+}
+
+div.todo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input.whatToDo {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px 40px 0px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #48cae4;
+  color: #48cae4;
+  min-width: 350px;
+  font-size: 19px;
+  transition: 0.4s ease-in-out;
+}
+
+.todoinput {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #48cae4;
+  color: #48cae4;
+  transition: 0.4s ease-in-out;
+}
+
+label.todo-label {
+  position: absolute;
+  color: #48cae4;
+  top: 133px;
+  transition: 0.4s linear;
+}
+
+input.whatToDo:focus + label.todo-label,
+input.whatToDo:valid + label.todo-label {
+  top: 100px;
+  font-size: 12px;
+  color: #64b5f6;
+}
+
+input.whatToDo:focus,
+input.whatToDo:valid {
+  border-bottom: 1px solid #64b5f6;
+}
+
+button.input-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #64b5f6;
+  font-weight: 700;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  margin: 0px 10px 0px 10px;
+  transition: 0.2s ease;
+}
+
+li.list-item {
+  margin-bottom: 10px;
+}
+
+button.input-btn:hover,
+button.list-btn:hover {
+  background-color: #64b5f6;
+}
+
+div.todo-list {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 10px 0px;
+  color: #48cae4;
+}
+
+button.list-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #64b5f6;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
