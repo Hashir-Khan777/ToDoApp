@@ -41,7 +41,7 @@ input.whatToDo {
   background: none;
   border-bottom: 1px solid #48cae4;
   color: #48cae4;
-  min-width: 350px;
+  width: 350px;
   font-size: 19px;
   transition: 0.4s ease-in-out;
 }
@@ -73,6 +73,12 @@ input.whatToDo:valid {
   border-bottom: 1px solid #64b5f6;
 }
 
+div.todo-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 button.input-btn {
   background: transparent;
   color: white;
@@ -80,7 +86,7 @@ button.input-btn {
   font-weight: 700;
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 10px 10px;
   transition: 0.2s ease;
 }
 

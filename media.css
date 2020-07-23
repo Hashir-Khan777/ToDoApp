@@ -1,1 +1,31 @@
-@media screen and (maxwidth: 600px) {}
+@media screen and (max-width: 452px) {
+  input.whatToDo {
+    width: 250px;
+  }
+  label.todo-label {
+    font-size: 12px;
+    top: 169px;
+  }
+  input.whatToDo:focus + label.todo-label,
+  input.whatToDo:valid + label.todo-label {
+    top: 140px;
+    font-size: 10px;
+    color: #64b5f6;
+  }
+}
+
+@media screen and (max-width: 268px) {
+  input.whatToDo {
+    width: 150px;
+  }
+  label.todo-label {
+    font-size: 9px;
+    top: 212px;
+  }
+  input.whatToDo:focus + label.todo-label,
+  input.whatToDo:valid + label.todo-label {
+    top: 190px;
+    font-size: 7px;
+    color: #64b5f6;
+  }
+}
